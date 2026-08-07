@@ -1,0 +1,1 @@
+document.querySelector(".faq").onclick=()=>{let a=document.querySelector(".ans");a.style.display=a.style.display=="block"?"none":"block";}
