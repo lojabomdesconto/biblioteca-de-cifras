@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(212,171,44,.5); }
+  50% { opacity: .6; box-shadow: 0 0 0 8px rgba(212,171,44,0); }
+}
+
+@media (max-width: 900px) {
+  .solution-grid, .pdf-grid { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
+  .features-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .why-grid { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
+  .why-arrow { transform: rotate(90deg); padding-top: 0 !important; }
+  .ba-grid { grid-template-columns: 1fr !important; }
+}
+
+@media (max-width: 640px) {
+  .nav-desktop { display: none !important; }
+  .features-grid { grid-template-columns: 1fr !important; }
+  .connector { display: none !important; }
+}
