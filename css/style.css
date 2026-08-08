@@ -1,4 +1,150 @@
-:root{--gold:#d4af37;--dark:#1f1f1f;--light:#f7f5f2}*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial,sans-serif;background:var(--light);color:var(--dark);line-height:1.6}.container{width:min(1140px,92%);margin:auto}header{position:sticky;top:0;background:#222}header .container{display:flex;justify-content:space-between;align-items:center;padding:18px 0}nav a{color:#fff;text-decoration:none;margin:0 12px}.btn-menu,.btn-principal,.btn-comprar{background:#d4af37;padding:16px 28px;border-radius:999px;text-decoration:none;color:#111;font-weight:bold}.hero{padding:80px 0;background:#2b2b2b}.hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}.hero h1,.hero p,.hero li,.tag{color:#fff}section{padding:80px 0}.cards-dor,.beneficios-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}.card,.beneficio,.faq-item{background:#fff;padding:24px;border-radius:16px;box-shadow:0 8px 20px rgba(0,0,0,.08)}.solucao{background:#fffaf0}.solucao-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}.cta{background:#222;color:#fff;text-align:center}.preco{font-size:3rem;color:#d4af37;font-weight:bold}footer{background:#111;color:#aaa;text-align:center;padding:30px}@media(max-width:768px){.hero-grid,.solucao-grid{grid-template-columns:1fr}nav{display:none}}
+```css
+:root {
+    --gold: #d4af37;
+    --dark: #1f1f1f;
+    --light: #f7f5f2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+.container {
+    width: min(1140px, 92%);
+    margin: auto;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background: #222;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+/* Botões */
+.btn-menu,
+.btn-principal,
+.btn-comprar {
+    background: #d4af37;
+    padding: 16px 28px;
+    border-radius: 999px;
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+}
+
+/* Hero */
+.hero {
+    padding: 80px 0;
+    background: #2b2b2b;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero h1,
+.hero p,
+.hero li,
+.tag {
+    color: #fff;
+}
+
+/* Seções */
+section {
+    padding: 80px 0;
+}
+
+/* Cards */
+.cards-dor,
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+    gap: 24px;
+}
+
+.card,
+.beneficio,
+.faq-item {
+    background: #fff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Solução */
+.solucao {
+    background: #fffaf0;
+}
+
+.solucao-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+/* CTA */
+.cta {
+    background: #222;
+    color: #fff;
+    text-align: center;
+}
+
+.preco {
+    font-size: 3rem;
+    color: #d4af37;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-grid,
+    .solucao-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        display: none;
+    }
+}
+```
+
 /* =========================================
    CORREÇÕES DE RESPONSIVIDADE - CELULAR
    ========================================= */
