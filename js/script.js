@@ -31,3 +31,31 @@ document.querySelectorAll('.faq-item button').forEach(btn=>{
  });
 });
 });
+
+//contador
+const DAYS = 24 * 3600 * 1000;
+
+const countdowns = [{
+    id: "mcReset",
+    timestamp: new Date("April 18, 2022 10:25:00").getTime(),
+    interval: 3 * DAYS
+  },
+];
+
+setInterval(() => {
+  const now = new Date().getTime();
+  countdowns.forEach(c => {
+    while (c.timestamp < now) c.timestamp += c.interval; // set target to future date
+    const tSecs = Math.floor((c.timestamp - now) / 1000);
+    const secs = tSecs % 60;
+    const tMins = (tSecs - secs) / 60;
+    const mins = tMins % 60;
+    const tHours = (tMins - mins) / 60;
+    const hours = tHours % 24;
+    const days = (tHours - hours) / 24;
+    document.getElementById('dia').innerHTML = `${days}`;
+    document.getElementById('hora').innerHTML = `${hours}`;
+    document.getElementById('minuto').innerHTML = `${mins}`;
+    document.getElementById('segundo').innerHTML = `${secs}`;
+  });
+}, 1000);
