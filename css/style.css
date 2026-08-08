@@ -398,3 +398,40 @@ img {
     }
 
 }
+
+/* ================================
+   Contador
+   ================================ */
+
+.contagem{
+width:300px;
+height:70px;
+background-color: #ffffff;  
+margin-left: auto;
+margin-right: auto;
+width: 6em
+text-align: center;
+}
+.numero
+{
+min-width: 40px;
+max-width: 45px;
+background-color: #f73839;
+color: #ffffff;
+font-size: 30px;
+margin: 10px;
+text-align: center;
+border-radius: 10px;
+padding: 5px;
+}
+
+.legenda{
+height: 25px;
+line-height: 5px;
+font-size: 12px;
+background-color: #ffffff;
+text-align: center;
+}
+  .tr{
+    height: 20px;
+  }
