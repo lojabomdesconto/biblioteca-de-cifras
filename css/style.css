@@ -1,1 +1,400 @@
 :root{--gold:#d4af37;--dark:#1f1f1f;--light:#f7f5f2}*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial,sans-serif;background:var(--light);color:var(--dark);line-height:1.6}.container{width:min(1140px,92%);margin:auto}header{position:sticky;top:0;background:#222}header .container{display:flex;justify-content:space-between;align-items:center;padding:18px 0}nav a{color:#fff;text-decoration:none;margin:0 12px}.btn-menu,.btn-principal,.btn-comprar{background:#d4af37;padding:16px 28px;border-radius:999px;text-decoration:none;color:#111;font-weight:bold}.hero{padding:80px 0;background:#2b2b2b}.hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}.hero h1,.hero p,.hero li,.tag{color:#fff}section{padding:80px 0}.cards-dor,.beneficios-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}.card,.beneficio,.faq-item{background:#fff;padding:24px;border-radius:16px;box-shadow:0 8px 20px rgba(0,0,0,.08)}.solucao{background:#fffaf0}.solucao-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}.cta{background:#222;color:#fff;text-align:center}.preco{font-size:3rem;color:#d4af37;font-weight:bold}footer{background:#111;color:#aaa;text-align:center;padding:30px}@media(max-width:768px){.hero-grid,.solucao-grid{grid-template-columns:1fr}nav{display:none}}
+/* =========================================
+   CORREÇÕES DE RESPONSIVIDADE - CELULAR
+   ========================================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 92%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ================================
+   HEADER
+   ================================ */
+
+@media (max-width: 768px) {
+
+    header {
+        position: relative;
+    }
+
+    header .container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .logo img {
+        max-width: 180px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .btn-menu {
+        display: inline-block;
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+
+}
+
+
+/* ================================
+   HERO
+   ================================ */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 55px 0 45px;
+    }
+
+    .hero-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: clamp(2rem, 9vw, 2.6rem);
+        line-height: 1.15;
+        margin: 20px 0;
+    }
+
+    .hero p {
+        font-size: 16px;
+        line-height: 1.65;
+    }
+
+    .hero ul {
+        list-style: none;
+        padding: 0;
+        margin: 25px 0;
+    }
+
+    .hero li {
+        margin: 8px 0;
+    }
+
+    .tag {
+        display: inline-block;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .hero-buttons {
+        width: 100%;
+    }
+
+    .btn-principal {
+        width: 100%;
+        max-width: 330px;
+        padding: 17px 20px;
+        font-size: 15px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 85%;
+        max-width: 330px;
+        margin: auto;
+    }
+
+}
+
+
+/* ================================
+   SEÇÕES
+   ================================ */
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 55px 0;
+    }
+
+    h2 {
+        font-size: clamp(1.7rem, 7vw, 2.2rem);
+        line-height: 1.2;
+    }
+
+}
+
+
+/* ================================
+   CARDS DAS DORES
+   ================================ */
+
+@media (max-width: 768px) {
+
+    .cards-dor {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 24px 20px;
+    }
+
+    .card h3 {
+        font-size: 19px;
+        margin: 8px 0;
+    }
+
+    .card p {
+        font-size: 15px;
+    }
+
+}
+
+
+/* ================================
+   SOLUÇÃO
+   ================================ */
+
+@media (max-width: 768px) {
+
+    .solucao-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .solucao-grid > div {
+        width: 100%;
+    }
+
+    .solucao-grid img {
+        width: 80%;
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .solucao-grid h2 {
+        margin-bottom: 20px;
+    }
+
+    .solucao-grid p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+}
+
+
+/* ================================
+   BENEFÍCIOS
+   ================================ */
+
+@media (max-width: 768px) {
+
+    .beneficios-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .beneficio {
+        padding: 22px 10px;
+        min-height: 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .beneficio h3 {
+        font-size: 15px;
+        line-height: 1.3;
+        margin-top: 8px;
+    }
+
+}
+
+
+/* ================================
+   ORGANIZAÇÃO
+   ================================ */
+
+@media (max-width: 768px) {
+
+    .organizacao {
+        text-align: center;
+    }
+
+    .organizacao p {
+        font-size: 16px;
+    }
+
+    .organizacao img {
+        width: 100%;
+        max-width: 500px;
+        margin: 25px auto;
+    }
+
+}
+
+
+/* ================================
+   DEPOIMENTOS
+   ================================ */
+
+@media (max-width: 768px) {
+
+    .depoimentos-slider {
+        width: 100%;
+        overflow: hidden;
+    }
+
+}
+
+
+/* ================================
+   GARANTIA
+   ================================ */
+
+@media (max-width: 768px) {
+
+    .garantia {
+        text-align: center;
+    }
+
+    .garantia img {
+        width: 110px;
+        max-width: 40%;
+        margin-bottom: 20px;
+    }
+
+    .garantia p {
+        font-size: 15px;
+    }
+
+}
+
+
+/* ================================
+   FAQ
+   ================================ */
+
+@media (max-width: 768px) {
+
+    .faq-item {
+        width: 100%;
+        margin-bottom: 12px;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .faq-item button {
+        width: 100%;
+        padding: 18px;
+        border: 0;
+        background: transparent;
+        text-align: left;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .faq-item div {
+        padding: 0 18px 18px;
+        font-size: 15px;
+    }
+
+}
+
+
+/* ================================
+   CTA FINAL
+   ================================ */
+
+@media (max-width: 768px) {
+
+    .cta {
+        padding: 60px 15px;
+    }
+
+    .cta h2 {
+        font-size: 1.9rem;
+    }
+
+    .cta h3 {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .preco {
+        font-size: 2.7rem;
+        margin: 15px 0 25px;
+    }
+
+    .btn-comprar {
+        width: 100%;
+        max-width: 330px;
+        padding: 18px 15px;
+        font-size: 15px;
+    }
+
+}
+
+
+/* ================================
+   CELULARES PEQUENOS
+   ================================ */
+
+@media (max-width: 380px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 1.85rem;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 1.65rem;
+    }
+
+    .beneficios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .btn-principal,
+    .btn-comprar {
+        font-size: 14px;
+    }
+
+}
