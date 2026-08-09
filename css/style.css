@@ -413,13 +413,23 @@ img {
    DEPOIMENTOS
    ================================ */
 
-@media (max-width: 768px) {
+.depoimento-autor {
+    border-top: 1px solid #eeeeee;
+    padding-top: 18px;
+    margin-top: 20px;
+}
 
-    .depoimentos-slider {
-        width: 100%;
-        overflow: hidden;
-    }
+.depoimento-autor strong {
+    display: block;
+    font-size: 16px;
+    color: #222;
+}
 
+.depoimento-autor span {
+    display: block;
+    font-size: 13px;
+    color: #888;
+    margin-top: 3px;
 }
 
 
